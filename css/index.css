@@ -1,0 +1,182 @@
+/*公共 以及外层盒子 以及阿里字体图标的设置*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-top: 76px;
+
+	
+}
+
+#backColor {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+#allContainer {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: .8;
+
+}
+
+.container-fluid {
+	width: 1220px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('iconfont.eot');
+	src: url('iconfont.eot?#iefix') format('embedded-opentype'), url('iconfont.woff') format('woff'), url('iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	padding-right: 3px;
+}
+
+
+/*logo大小*/
+
+.navbar-brand i {
+	font-size: 45px;
+}
+
+
+/*模态框关闭按钮的大小*/
+
+.close i {
+	font-size: 25px;
+	color: red;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.input-group span {
+	width: 80.8px;
+	text-align: center;
+}
+
+#RegLoginTabContent {
+	padding-top: 20px;
+}
+
+
+/*留言框禁止缩放大小*/
+
+textarea.form-control {
+	resize: none;
+	width: 90%;
+}
+
+@media only screen  and (max-width: 768px) {
+	#borrowBook {
+		display: block;
+	}
+	#borrowList {
+		display: block;
+	}
+	#selfInfor {
+		display: block;
+	}
+}
+
+
+/*大尺寸折叠起来*/
+
+@media only screen and (min-width: 768px) {
+	/*导航小箭头*/
+	.arrow-top {
+		width: 0;
+		height: 0;
+		/*border-top: 10px solid red;*/
+		border-bottom: 25px solid #E5E5E5;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		position: absolute;
+		top: 51px;
+		right: 21px;
+	}
+	#navBar li {
+		position: relative;
+	}
+	/*.borrow{
+	margin-top: 76px;
+}*/
+	#borrowBook {
+		border: 1px solid rgba(0, 0, 0, .2);
+		border-radius: 6px;
+		position: relative;
+	}
+	#borrowList {
+		border: 1px solid rgba(0, 0, 0, .2);
+		border-radius: 6px;
+		position: absolute;
+		top: 0px;
+		left: 177px;
+		display: none;
+	}
+	#selfInfor {
+		border: 1px solid rgba(0, 0, 0, .2);
+		border-radius: 6px;
+		position: absolute;
+		top: 0px;
+		left: 177px;
+		display: none;
+	}
+}
+/*注册成功*/
+.regsuccess,.failed {
+	font-size: 32px;
+
+}
+.regsuccess,.failed{
+	text-align:center;
+}
+.regsuccess i{
+	font-size: 32px;
+	color: #317EF3;
+}
+.failed i{
+	font-size: 32px;
+	color: red;
+}
+.true{
+	color: dodgerblue;
+}
+.false{
+	color: red;
+}
+/*#bcontent{
+	border: 1px solid #eee;
+	border-radius: 5px;
+	width: 500px;
+	margin-left: 200px;
+	background-color: #EEEEEE;
+	position: absolute;
+	top: 123px;
+	left: 250px;	
+	box-shadow: 0 0 20px;
+}*/
+
